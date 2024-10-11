@@ -1,5 +1,4 @@
 # CLI Utils
-================
 
 A collection of utility functions for building command-line interfaces in Go.
 
@@ -38,7 +37,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/yourusername/cliutils"
+	"github.com/mishankov/cliutils"
 )
 
 func main() {
