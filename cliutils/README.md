@@ -37,7 +37,8 @@ You can then use the functions provided by the package to read user input, forma
 
 ## Example
 
-Here is an example of how to use the `UserInput` function to read a line of input from the user:
+### `UserInput`
+
 ```go
 package main
 
@@ -57,6 +58,28 @@ func main() {
 }
 ```
 This code will print "Enter your name: " to the console, read a line of input from the user, and then print "Hello, " followed by the user's input.
+
+### `FormatListWithSeparator`
+
+Formats a list of strings or runes with a specified separator.
+
+```go
+list := []string{"apple", "banana", "cherry"}
+formattedList := cliutils.FormatListWithSeparator(list, ", ")
+fmt.Println(formattedList) // Output: "apple, banana, cherry"
+
+list = []string{"only one"}
+formattedList = cliutils.FormatListWithSeparator(list, ", ")
+fmt.Println(formattedList) // Output: "only one"
+
+list = []string{}
+formattedList = cliutils.FormatListWithSeparator(list, ", ")
+fmt.Println(formattedList) // Output: ""
+
+listRunes := []rune{'a', 'p', 'p', 'l', 'e'}
+formattedList = FormatListWithSeparator(listRunes, ", ")
+fmt.Println(formattedList) // Output: "a, p, p, l, e"
+```
 
 ## License
 
