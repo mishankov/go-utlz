@@ -38,3 +38,13 @@ func FormatListWithSeparator[T string | rune](l []T, sep string) string {
 	}
 	return r
 }
+
+func GetEnvOrDefault(key, def string) string {
+	value := os.Getenv(key)
+
+	if len(value) == 0 {
+		return def
+	} else {
+		return strings.TrimSpace(value)
+	}
+}

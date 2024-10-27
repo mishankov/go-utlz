@@ -81,6 +81,13 @@ formattedList = FormatListWithSeparator(listRunes, ", ")
 fmt.Println(formattedList) // Output: "a, p, p, l, e"
 ```
 
+### GetEnvOrDefault
+
+Returns the value of an environment variable, or a default value if the variable is not set.
+
+```go
+value := cliutils.GetEnvOrDefault("MY_VAR", "default_value")
+
 ## License
 
 This package is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
