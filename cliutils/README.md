@@ -22,9 +22,9 @@ Formats a list of elements into a string, using a separator.
 
 ## Usage
 
-To use this package, install it via `go get`:
+Install `go-utilz` via `go get`:
 ```shell
-go get github.com/mishankov/go-utlz/cliutils
+go get github.com/mishankov/go-utlz
 ```
 
 and simply import it in your Go program:
