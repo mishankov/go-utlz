@@ -87,6 +87,7 @@ Returns the value of an environment variable, or a default value if the variable
 
 ```go
 value := cliutils.GetEnvOrDefault("MY_VAR", "default_value")
+```
 
 ## License
 
