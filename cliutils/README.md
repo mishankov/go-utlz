@@ -81,7 +81,7 @@ formattedList = FormatListWithSeparator(listRunes, ", ")
 fmt.Println(formattedList) // Output: "a, p, p, l, e"
 ```
 
-### GetEnvOrDefault
+### `GetEnvOrDefault`
 
 Returns the value of an environment variable, or a default value if the variable is not set.
 
